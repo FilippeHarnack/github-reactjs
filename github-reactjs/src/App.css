@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Reset básico */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: white;
+}
+
+/* Título customizado com ícone */
+.title-custom {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.title-custom img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Formulário de busca */
+.search-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.search-form input {
+  padding: 10px;
+  font-size: 16px;
+  flex: 1;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.search-form input::placeholder {
+  color: #aaa;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-form button:hover {
+  background-color: #0b5ed7;
+}
+
+/* Cartão do usuário GitHub */
+.github-user {
+  width: 100%;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.github-user img {
+  margin-bottom: 10px;
+  border: 3px solid #ccc;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Foco limpo nos inputs e botões */
+input.form-control:focus,
+button.btn:focus {
+  box-shadow: none;
+  border-color: #0d6efd;
+}
+
+
+.profile-card {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 16px;
+}
+
+.title-custom img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  background-color: white;
+  border-radius: 50%;
+  padding: 6px;
+}
+
+.search-form input {
+  padding: 12px;
+  font-size: 18px;
+}
+
+.search-form button {
+  padding: 12px 24px;
+  font-size: 18px;
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
